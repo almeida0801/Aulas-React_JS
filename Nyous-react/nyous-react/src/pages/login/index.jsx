@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Menu from '../../components/menu';
 import Rodape from '../../components/rodape';
 import { Container, Form, Button } from 'react-bootstrap';
 import './index.css';
 
 
-const Login = () => {
+const Login = () => { 
+
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+
+
     return(
         <div>
             <Menu/>
@@ -22,14 +27,14 @@ const Login = () => {
                             <Form.Group controlId='formBasicEmail'>
 
                                 <Form.Label> Email </Form.Label>
-                                <Form.Control type='email' placeholder='Informe seu email' required></Form.Control>
+                                <Form.Control type='email'value={email} placeholder='Informe seu email' required></Form.Control>
 
                             </Form.Group>
 
                             <Form.Group controlId='formBasicPassword'>
 
                                 <Form.Label> Senha </Form.Label>
-                                <Form.Control type='password' placeholder='Informe sua senha' required ></Form.Control>
+                                <Form.Control type='password'value={senha} placeholder='Informe sua senha' required ></Form.Control>
 
                             </Form.Group>
 
