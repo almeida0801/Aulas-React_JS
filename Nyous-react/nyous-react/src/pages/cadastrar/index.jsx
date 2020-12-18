@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from '../../components/menu';
 import Rodape from '../../components/rodape';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, } from 'react-bootstrap';
 import './index.css';
 
 
